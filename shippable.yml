@@ -30,6 +30,9 @@ build:
     - rebar3 -v
     - elixir --version
     - mix --version
+    # install elm
+    - npm install -g elm
+    - elm -v
     # test samples defined in pom.xml
     - mvn --quiet verify -P samples -f CI/pom.xml.shippable
     # generate all petstore samples (client, servers, doc)
